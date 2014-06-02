@@ -1,0 +1,57 @@
+<?php include("../includes/header.php"); ?>
+
+<div id="ht-section">
+<div id="results-name">SSC 2013 Results</div>
+<form method="post">
+<b>Hallticket Number :</b> <input class="hbox" type="text" name="hnumber">
+<input class="submit" type="submit" name="treasure" value="Submit"></input>
+</form>
+<span>Ex: 1432121743</span>>
+</div>
+
+<?php
+$dbhost = 'localhost';
+$dbuser = 'root';
+$dbpass = 'password';
+$conn = mysql_connect($dbhost, $dbuser, $dbpass);
+if(! $conn )
+{
+  die('Could not connect: ' . mysql_error());
+}
+
+$hallticket = $_POST["hnumber"];
+$sql = "SELECT * FROM exam where htno='$hallticket' ";
+
+mysql_select_db('results');
+$retval = mysql_query( $sql, $conn );
+if(! $retval )
+{
+    die('Could not get data: ' . mysql_error());
+}
+while($row = mysql_fetch_array($retval, MYSQL_ASSOC))
+{
+    echo "Hallticket :{$row['htno']}  <br> ".
+         "GPA : {$row['gpa']} <br> ".
+         "Results : {$row['results']} <br> ".
+         "Comment : {$row['comment']} <br> ".
+         
+         "--------------------------------<br>";
+
+echo '<table class="result-output">
+<tr><td class="tname">Hall Ticket Number : </td><td>'.$row['htno'].'</td></tr>
+<tr><td class="tname">GPA : </td><td>'.$row['gpa'].'</td></tr>
+<tr><td class="tname">Result: </td><td>'.$row['results'].'</td></tr>
+<tr><td class="tname">Comment : </td><td>'.$row['comment'].'</td></tr>
+</table>';
+} 
+echo "Fetched data successfully\n";
+mysql_close($conn);
+$hallticket="";
+?>
+<?php include("../includes/ssc_info.html"); ?>
+
+<?php include("../includes/footer.php"); ?>
+
+</div>
+</body>
+</html>

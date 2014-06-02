@@ -1,0 +1,7 @@
+<?php
+  define('MAINDIR', 'http://192.168.40.59/php-result/');
+  define('CSSDIR', 'http://192.168.40.59/php-result/css/');
+  define('IMGDIR', 'http://192.168.40.59/php-result/images/');
+  define('TMPDIR', 'http://192.168.40.59/php-result/templates/');
+  define('INCDIR', 'http://192.168.40.59/php-result/includes/');
+  ?>

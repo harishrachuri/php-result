@@ -1,0 +1,12 @@
+<div id="footer">
+<ul>
+<li><a href="<?= CSSDIR ?>index.php">Home</a></li>
+<li><a href="<?= CSSDIR ?>templates/ssc.php">SSC</a></li>
+<li><a href="<?= CSSDIR ?>templates/eamcet.php">Eamcet</a></li>
+</ul>
+</div>
+
+<div id="copyleft">
+<p>Copyleft &copy; 2014</p>
+</div>
+

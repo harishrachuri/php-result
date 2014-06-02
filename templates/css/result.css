@@ -1,0 +1,300 @@
+/*********************************
+       Body Section
+*********************************/
+body {
+	background: url("../images/bg.jpg"); background-attachment: fixed; 
+	width: 100%; background-size: cover; background-repeat:no-repeat; 
+}
+
+
+/*********************************
+	Main Section
+*********************************/
+div#main{
+	background: #fff;
+	width: 50%;
+	margin: 0 25%;
+	float: left;
+	text-align: center;
+	border: 2px solid #d5d5d5;
+	box-shadow: 10px 10px 5px #888888;
+}
+
+/*********************************
+	Header Section
+*********************************/
+div#header{
+	background: url("../images/header.jpg");
+	width: 100%;
+	height: 100px;
+}
+
+
+/**Logo**/
+div.logo{
+	background: url("../images/logo.png") no-repeat;
+	width: 14%;
+	height: 100px;
+	float: left;
+	background-size: 85%;
+	margin: 0 1%;
+}
+
+/**Header Title**/
+div.header-text{
+	width: 60%;
+	float: left;
+	margin: 0 2%;
+	text-align: center;
+}
+div.header-text h1{
+	color: #f05023; 
+}
+
+/**Menu Section**/
+div#nav{
+	margin-top: 0px;
+	background: url("../images/nav.jpg");
+	height: 36px;
+}
+
+div#nav ul{
+	list-style-type:none;
+	margin:0 0 0 1%  ;
+	padding:0;
+	text-align: left;
+}
+
+div#nav ul li{
+	display:inline;
+	padding-right: 10px;
+}
+
+div#nav ul li a{
+	color: white; 
+	line-height: 38px; 
+	font-weight: bold;
+	text-decoration: none;
+}
+
+/**Hallticket Search**/
+
+div#results-name{
+	color: #f05023;
+	font-weight: bold;
+	font-size: 188%;
+	margin: 20px 0;	
+	}
+
+div#ht-section{
+	margin-top: 20px;
+	width: 100%;
+	float: left;
+}
+
+div#ht-section input.hbox{
+	min-height: 25px;
+	border-radius: 5px;
+	}
+
+div#ht-section input.submit{
+	width: 10%;
+	color: white;
+	background: #f05023;
+	border-radius: 5px;
+	border: 0;
+	min-height: 25px;
+	font-size: 109%;
+	}
+
+
+div#result-info{
+	width: 96%;
+	float: left;
+	margin: 0 2%;
+	border-top: 1px solid #ccc;	
+	}
+
+div#result-info .result-content{
+	width: 100%;
+	float: left;
+	}	
+	
+div#result-info .result-content h3{
+	color: #f05023;
+	text-align: left;	
+	}
+	
+div#result-info .result-content p{
+	text-align: left;
+	font-size: 109%;	
+	}	
+	
+div#result-info .result-table1{
+	width: 100%;
+	float: left;
+	}	
+
+div#result-info .result-table1 table.grade-point{ 
+	width: 90%;
+	margin: 10px 5%;
+	border-collapse: collapse;
+	}
+	
+div#result-info .result-table1 table.grade-point tbody tr td{
+	width: 20%;
+	padding: 5px 2%;
+	border-right : 1px solid #ccc;
+	text-align: center;  
+	border: 1px solid #ccc;	
+	}
+
+div#result-info .result-table1 table.grade-point tr.grade-point-head{
+	font-weight: bold;
+	}
+
+div#result-info .result-table1 table.grade-point tr.even{
+	background: #F5F5F5;
+	}	
+	
+div#result-info .result-table1 table.grade-point tr.grade-point-note{
+	color: #f05023;
+	font-size: 109%;
+	font-weight: bold;	
+	}	
+	
+div#result-info .result-table2{
+	width: 100%;
+	float: left;	
+	}
+	
+div#result-info .result-table2 h4{
+	color: #f05023;
+	text-align: left;
+	margin-left: 5%;
+	font-size: 109%;
+	font-weight: bold;
+	}	
+	
+div#result-info .result-table2 table.below-grade-point{ 
+	width: 90%;
+	margin: 10px 5%;
+	border-collapse: collapse;	
+	}
+	
+div#result-info .result-table2 table.below-grade-point tbody tr td{
+	width: 20%;
+	padding: 5px 2%;
+	border-right : 1px solid #ccc;
+	text-align: center;  
+	border: 1px solid #ccc;	
+	}
+	
+div#result-info .result-table2 table.below-grade-point tr.below-grade-point-head{
+	font-weight: bold;
+	}
+	
+div#result-info .result-table2 table.below-grade-point tr.even{
+	background: #F5F5F5;
+	}	
+		
+div#result-info .result-table2 table.below-grade-point tr.below-grade-point-note{
+	color: #f05023;
+	font-size: 109%;
+	font-weight: bold;	
+	}
+
+/*********************************
+   Content Section Index Page
+*********************************/
+div#content{
+	width: 100%;
+	float: left;
+}
+
+
+div#content .exam{
+	width: 94%;
+	float: left;
+	height: 40px;
+	font-size: 130%;
+	background-color: #eee;
+	padding: 6px 15px;
+	margin: 16px 1% 0 1%;
+	border-left: 2px solid #f05023;
+	text-align: left;
+}
+
+div#content .exam a{
+	color: #f05023;
+	text-decoration: none; 
+}
+
+/*********************************
+	Results Section
+*********************************/
+table.result-output{
+	background: #ccc;
+	margin: auto;
+
+}
+table.result-output tr td.tname{
+	color: #f05023;
+	font-weight: bold;
+}
+
+table.result-output tr td{
+	border: 1px solid #d5d5d5;
+}
+
+/*********************************
+
+*********************************/
+div#note{
+	width: 90%;
+	padding: 10px 5%;
+	float: left;
+	margin: 50px 0 ;
+	background-color: #eee;
+	font-size: 80%;
+}
+
+/*********************************
+	Footer Section
+*********************************/
+div#footer{
+	margin-top: 10px;
+	background: url("../images/nav.jpg");
+	height: 36px;
+	width: 100%;
+	float: left;
+}
+
+div#footer ul{
+	list-style-type:none;
+	margin:0 0 0 1%  ;
+	padding:0;
+	text-align: center;
+}
+
+div#footer ul li{
+	display:inline;
+	padding-right: 10px;
+}
+
+div#footer ul li a{
+	color: white;
+	line-height: 38px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+/**Copyright Section**/
+div#copyleft{
+	width: 100%;
+	float: left;
+	margin: 1px 0;
+}
+
+
+
